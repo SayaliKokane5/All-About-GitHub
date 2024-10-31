@@ -1,0 +1,54 @@
+# Git Commands
+
+## Setup
+- `git init`: Initialize a new Git repository
+- `git clone [url]`: Clone an existing repository from a remote URL
+- `git config --global user.name "Your Name"`: Set the username for commits
+- `git config --global user.email "youremail@example.com"`: Set the email address for commits
+
+## Basic Commands
+- `git status`: Show the status of changes
+- `git add [file]`: Stage changes for the next commit
+- `git commit -m "Commit message"`: Commit staged changes
+- `git push [alias] [branch]`: Push changes to a remote repository
+- `git pull [alias] [branch]`: Fetch and merge changes from a remote repository
+- `git fetch`: Download objects and refs from another repository
+- `git merge [branch]`: Merge a branch into the current branch
+- `git log`: Show commit history
+
+## Branching
+- `git branch`: List all branches
+- `git branch [branch-name]`: Create a new branch
+- `git checkout [branch-name]`: Switch to a different branch
+- `git checkout -b [branch-name]`: Create and switch to a new branch
+- `git branch -d [branch-name]`: Delete a branch
+- `git merge [branch-name]`: Merge a branch into the current branch
+
+## Stashing
+- `git stash`: Stash changes in a dirty working directory
+- `git stash apply`: Apply the stashed changes
+- `git stash list`: List all stashes
+- `git stash drop`: Remove a stash
+
+## Remote Repositories
+- `git remote -v`: Show all remote repositories
+- `git remote add [alias] [url]`: Add a new remote repository
+- `git remote remove [alias]`: Remove a remote repository
+
+## Tagging
+- `git tag`: List all tags
+- `git tag [tag-name]`: Create a new tag
+- `git tag -a [tag-name] -m "Message"`: Create an annotated tag
+- `git push [alias] [tag]`: Push a tag to a remote repository
+
+## Undo Changes
+- `git reset HEAD [file]`: Unstage changes
+- `git checkout -- [file]`: Discard changes in the working directory
+- `git revert [commit]`: Create a new commit that undoes changes from a previous commit
+
+## Advanced Commands
+- `git rebase [branch]`: Reapply commits on top of another base tip
+- `git cherry-pick [commit]`: Apply the changes introduced by some existing commits
+- `git diff`: Show changes between commits, commit and working tree, etc.
+- `git blame [file]`: Show what revision and author last modified each line of a file
+- `git clean -f`: Remove untracked files from the working directory
